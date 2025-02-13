@@ -12,6 +12,7 @@ eval $(minikube -p minikube docker-env)
 - `/workspaces/EdbApache/6_Symbols/2_setupDocker/_secret_create.md`
 
 📦 **Deployments:**
+cd /workspaces/EdbApache/6_Symbols/2_setupDocker/
 ```bash
 kubectl apply -f apache-deployment.yaml
 kubectl apply -f edb-deployment.yaml
