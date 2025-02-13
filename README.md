@@ -12,12 +12,7 @@ Documentation for the Folder Structure
 | **🌀 Semblance**    | *Errors Found in the Process* - Documents mistakes and solutions, making errors valuable learning opportunities.       |  Fix it   |
 
 Practical Terminal Commands From Your Workstation
-
-```bash
-git pull; git add . ; git commit -m "Thanos Proxy implement " -m "initial commit " ; git push;clear
-```
-Symbols/git_push.sh "living the dream"
-Symbols/git_push.sh "nginx push"
+- use copilot commit messages!
 
 
 ## License
