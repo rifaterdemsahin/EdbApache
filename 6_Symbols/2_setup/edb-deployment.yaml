@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: edb-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: edb
+  template:
+    metadata:
+      labels:
+        app: edb
+    spec:
+      containers:
+      - name: edb
+        image: enterprisedb/edb-as:13
+        ports:
+        - containerPort: 5444
+        env:
+        - name: POSTGRES_USER
+          value: "admin"
+        - name: POSTGRES_PASSWORD
+          value: "secretpassword"
+        - name: POSTGRES_DB
+          value: "demo_db"
+        volumeMounts:
+        - name: edbdata
+          mountPath: /var/lib/postgresql/data
+      volumes:
+      - name: edbdata
+        hostPath:
+          path: /path/to/your/edbdata
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: edb-service
+spec:
+  selector:
+    app: edb
+  ports:
+    - protocol: TCP
+      port: 5444
+      targetPort: 5444
+  type: NodePort
