@@ -69,11 +69,15 @@ To connect to your database locally:
 
 ```bash
 # Replace <service-name> with your actual service name
+kubectl get svc
 kubectl port-forward svc/<service-name> 5432:5432
 kubectl port-forward svc/single-instance-cluster-rw 5432:5432
 
    
 ```
+
+minikube ip
+
 
 ## Troubleshooting Tips 🔧
 
