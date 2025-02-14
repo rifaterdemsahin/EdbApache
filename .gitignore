@@ -1,3 +1,4 @@
-6_Symbols/2_setup/_secret_create.md
-6_Symbols/3_helm/_install_withtoken.md
-6_Symbols/3_helm/cluster_password_to_connect.md
+6_Symbols/3_helm/_secure_install_withtoken.md
+6_Symbols/3_helm/_secure_cluster_password_to_connect.md
+6_Symbols/3_helm/_secure_connect_db_command_line.md
+6_Symbols/2_setupDocker/_secure_secret_create.md
