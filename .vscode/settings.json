@@ -1,3 +1,16 @@
 {
-    "DockerRun.DisableDockerrc": true
+    "DockerRun.DisableDockerrc": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "tomisluck",
+            "group": "betting",
+            "database": "postgres",
+            "username": "app",
+            "password": "QIjKBSHcUfUXv3zX0IPYHisR9uOBAWFX1ln0GkFPnqn9l07sm4dkBzbQjafm7yPQ"
+        }
+    ]
 }
