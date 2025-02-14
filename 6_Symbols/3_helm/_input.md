@@ -1,11 +1,6 @@
 minikube delete
 minikube start
-
-3. **Verify Minikube is running**:
-   ```bash
-   kubectl get nodes
-   ```
-   - You should see a node named `minikube`.
+ kubectl get nodes
 
 ### Step 2: Install kubectl 🖥️
 1. **Download and install kubectl**:
