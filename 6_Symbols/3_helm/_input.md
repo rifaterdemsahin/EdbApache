@@ -9,6 +9,11 @@ minikube start
 kubectl get nodes
 ```
 
+```bash
+sudo apt update
+sudo apt install postgresql-client
+```
+
 ## Adding EDB Helm Repository 📦
 Let's add the EDB Helm repository:
 
