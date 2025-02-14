@@ -1,0 +1,11 @@
+apiVersion: postgresql.k8s.enterprisedb.io/v1
+kind: Cluster
+metadata:
+  name: single-instance-cluster
+  namespace: postgresql-operator-system
+spec:
+  instances: 1
+  storage:
+    size: 500Mi
+  superuserSecret:
+    name: single-instance-cluster-superuser

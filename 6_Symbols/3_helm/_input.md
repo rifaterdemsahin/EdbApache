@@ -28,6 +28,8 @@ helm upgrade --install edb-pg4k \
     edb/edb-postgres-for-kubernetes
 ```
 
+> /workspaces/EdbApache/6_Symbols/3_helm/_install_withtoken.md
+
 ⚠️ **Important**: Replace `<your_token>` with your actual EDB token. You can get this from your EnterpriseDB account.
 
 ## Setting Up Your Working Environment 🔧
@@ -49,7 +51,7 @@ kubectl get pods
 Let's create a sample PostgreSQL cluster:
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/EnterpriseDB/edb-k8s-docs/main/examples/cluster-example.yaml
+kubectl apply -f /workspaces/EdbApache/6_Symbols/3_helm/single_instance_cluster.yaml
 ```
 
 Verify the cluster deployment:
@@ -63,6 +65,9 @@ To connect to your database locally:
 ```bash
 # Replace <service-name> with your actual service name
 kubectl port-forward svc/<service-name> 5432:5432
+kubectl port-forward svc/single-instance-cluster-rw 5432:5432
+
+   
 ```
 
 ## Troubleshooting Tips 🔧
